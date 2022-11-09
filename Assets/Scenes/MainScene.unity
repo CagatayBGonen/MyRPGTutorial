@@ -133,7 +133,7 @@ GameObject:
   m_Component:
   - component: {fileID: 258265284}
   - component: {fileID: 258265283}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: TerrainGroup_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -181,6 +181,9 @@ GameObject:
   - component: {fileID: 700664090}
   - component: {fileID: 700664089}
   - component: {fileID: 700664088}
+  - component: {fileID: 700664091}
+  - component: {fileID: 700664092}
+  - component: {fileID: 700664093}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -256,6 +259,63 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!114 &700664091
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 700664086}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Actions: {fileID: -944628639613478452, guid: 6cb1a4ddc1ac1054ab39acfa98a5fe95, type: 3}
+  m_NotificationBehavior: 0
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents: []
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: Keyboard&Mouse
+  m_DefaultActionMap: Player
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}
+--- !u!114 &700664092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 700664086}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7b5e95cf4fb00842902a898a617d67f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movementMask:
+    serializedVersion: 2
+    m_Bits: 64
+--- !u!114 &700664093
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 700664086}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d946196b10a08445bfafe687c54e217, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -361,7 +421,7 @@ GameObject:
   - component: {fileID: 818573843}
   - component: {fileID: 818573845}
   - component: {fileID: 818573844}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Terrain_0_0_eee816ba-24a3-45f7-90fd-a14134c4b519
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -504,14 +564,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0, y: -0.86602545, z: 0, w: 0.49999994}
-  m_LocalPosition: {x: 65.65, y: 4.299999, z: 87.4}
+  m_LocalRotation: {x: 0.06827351, y: -0.90905756, z: 0.37654394, w: 0.16482684}
+  m_LocalPosition: {x: 70.05, y: 16.3, z: 92.93}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: -120, z: 0}
+  m_LocalEulerAnglesHint: {x: 45, y: -159.446, z: 0}
 --- !u!850595691 &1619720898
 LightingSettings:
   m_ObjectHideFlags: 0
@@ -669,7 +729,7 @@ GameObject:
   - component: {fileID: 1910829541}
   - component: {fileID: 1910829540}
   - component: {fileID: 1910829539}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Bridge
   m_TagString: Untagged
   m_Icon: {fileID: 0}
