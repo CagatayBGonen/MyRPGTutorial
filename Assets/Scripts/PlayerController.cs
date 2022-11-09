@@ -38,6 +38,22 @@ public class PlayerController : MonoBehaviour
                 //Stop focusing any obj
             }
         }
+
+        //for player interaction
+        //checking player input (right mouse button)
+        if (Input.GetMouseButtonDown(1))
+        {
+            // casting ray from camera to wherever we click
+            Ray ray = cam.ScreenPointToRay(Input.mousePosition);
+            //information about what we hit with this ray
+            RaycastHit hit;
+            //We check if ray hits something interactable
+            if(Physics.Raycast(ray, out hit,100,movementMask))
+            {
+                //check if we hit an interactable
+                //if we did set it as focus
+            }
+        }
     }
 
 
